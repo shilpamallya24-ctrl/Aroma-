@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aroma Cafe</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf7f2;
+}
+
+.navbar{
+background:#4b2e2e;
+}
+
+.navbar-brand,
+.nav-link{
+color:white!important;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:bold;
+}
+
+.hero p{
+font-size:20px;
+margin:20px 0;
+}
+
+.btn-coffee{
+background:#d2691e;
+color:white;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+}
+
+.section-title{
+text-align:center;
+margin:60px 0 40px;
+font-weight:bold;
+color:#4b2e2e;
+}
+
+.card{
+transition:.4s;
+border:none;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.gallery img{
+height:250px;
+object-fit:cover;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.review{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+footer{
+background:#4b2e2e;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:60px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">☕ Aroma Cafe</a>
+
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#menu1">Menu</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Fresh Coffee<br>Cozy Moments</h1>
+
+<p>Enjoy premium coffee with delicious snacks in a warm atmosphere.</p>
+
+<a href="#menu1" class="btn btn-coffee">View Menu</a>
+
+<a href="https://wa.me/919876543210" class="btn btn-light">Order Now</a>
+
+</div>
+
+</section>
+
+<section id="about" class="container">
+
+<h2 class="section-title">About Aroma Cafe</h2>
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded">
+
+</div>
+
+<div class="col-md-6">
+
+<h3>Welcome!</h3>
+
+<p>
+Aroma Cafe is a perfect place for students, families and coffee lovers.
+Enjoy handcrafted coffee, fresh bakery items, free Wi-Fi and a peaceful environment.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="menu1" class="container">
+
+<h2 class="section-title">Featured Menu</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+<div class="card-body text-center">
+<h5>Cappuccino</h5>
+<p>$4</p>
+<button class="btn btn-coffee">Order</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+<div class="card-body text-center">
+<h5>Latte</h5>
+<p>$5</p>
+<button class="btn btn-coffee">Order</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+<div class="card-body text-center">
+<h5>Brownie</h5>
+<p>$3</p>
+<button class="btn btn-coffee">Order</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+<div class="card-body text-center">
+<h5>Sandwich</h5>
+<p>$6</p>
+<button class="btn btn-coffee">Order</button>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="container">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="row gallery g-3">
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded">
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews" class="container">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>"Amazing coffee and friendly staff!"</p>
+
+<b>Sarah</b>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>"Perfect place for studying."</p>
+
+<b>John</b>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>"Best cafe in town!"</p>
+
+<b>Emily</b>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="container">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<form>
+
+<input class="form-control mb-3" placeholder="Name">
+
+<input class="form-control mb-3" placeholder="Email">
+
+<input class="form-control mb-3" placeholder="Phone">
+
+<textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+
+<button class="btn btn-coffee">Send Message</button>
+
+</form>
+
+</div>
+
+<div class="col-md-6">
+
+<iframe
+src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350"
+style="border:0;">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h4>Aroma Cafe</h4>
+
+<p>123 Coffee Street, Your City</p>
+
+<p>Phone: +91 9876543210</p>
+
+<p>Email: info@aromacafe.com</p>
+
+<p>© 2025 Aroma Cafe. All Rights Reserved.</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919876543210">💬</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
